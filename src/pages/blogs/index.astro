@@ -1,0 +1,21 @@
+---
+import AppLayout from '../../components/AppLayout'
+import CardComponent from '../../components/CardComponent'
+import Layout from '../../layouts/Layout.astro'
+import BlogContainerComponent from './../../components/BlogContainerComponent'
+import BlogListItemComponent from './../../components/BlogListItemComponent'
+---
+
+<Layout title="Blogs - Personal Site">
+    <AppLayout>
+        <div class="app-container">
+            <CardComponent>
+                <h1 class="text-lg lg:text-2xl font-semibold">Blog</h1>
+
+                <BlogContainerComponent>
+                    <BlogListItemComponent />
+                </BlogContainerComponent>
+            </CardComponent>
+        </div>
+    </AppLayout>
+</Layout>
